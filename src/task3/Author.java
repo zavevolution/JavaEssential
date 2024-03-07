@@ -1,4 +1,4 @@
-package home_work1;
+package task3;
 
 public class Author {
     String author = "Erik Doe";

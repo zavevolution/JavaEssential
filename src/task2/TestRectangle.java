@@ -1,4 +1,5 @@
-package home_work;
+package task2;
+
 
 // Використовуючи IDEA, створіть проект із пакетом.
 // Потрібно: Створити клас із ім'ям Rectangle.
@@ -8,15 +9,21 @@ package home_work;
 // Написати програму, яка приймає від користувача довжини двох сторін прямокутника
 // і виводить на екран периметр та площу.
 
-public class Rectangle {
-    double side1;
-    double side2;
 
-    double areaCalculator(double side1, double side2) {
-        return side1 * side2;
-    }
+import java.util.Scanner;
 
-    double perimeterCalculator(double side1, double side2) {
-        return side1 * 2 + side2 * 2;
+public class TestRectangle {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double side1, side2;
+        System.out.println("Введіть ширину прямокутника");
+        side1 = in.nextDouble();
+        System.out.println("Введіть висоту прямокутника");
+        side2 = in.nextDouble();
+
+        Rectangle rec = new Rectangle();
+        double perimeter = rec.perimeterCalculator(side1, side2);
+        double area = rec.areaCalculator(side1, side2);
+        System.out.println("Периметер прямокутника " + perimeter + "\nПлоща прямокутника " + area);
     }
 }

@@ -1,4 +1,4 @@
-package home_work1;
+package task3;
 
 public class Title {
     String title = "Java для початківців.";
